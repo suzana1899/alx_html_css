@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: rgb(143, 178, 167);
 }
 
 main {
@@ -27,7 +28,6 @@ header,
 footer {
   padding: 10px;
   background-color: #ccc;
-  text-align: center;
 }
 
 table {
