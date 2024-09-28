@@ -1,0 +1,62 @@
+.what-we-do,
+.results {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  width: 100px;
+  padding: 20px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-item:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/*pentagons */
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pentagon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .service-item {
+    width: 80px;
+  }
+
+  .pentagon {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+}

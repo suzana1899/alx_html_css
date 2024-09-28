@@ -1,0 +1,42 @@
+.results {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pentagon {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 87px solid #e74c3c;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pentagon::after {
+  content: "+2%";
+  position: absolute;
+  top: 25%;
+  color: white;
+  font-size: 24px;
+}
+
+@media (max-width: 480px) {
+  .pentagon {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid #e74c3c;
+  }
+
+  .pentagon::after {
+    font-size: 20px;
+  }
+}

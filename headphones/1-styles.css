@@ -102,6 +102,9 @@ a:hover {
   nav ul {
     display: none;
   }
+  .hamburger {
+    display: block;
+  }
   nav {
     justify-content: center;
   }
@@ -118,55 +121,144 @@ a:hover {
   nav img {
     width: 120px;
   }
+
   .top h1 {
     font-size: 22px;
     line-height: 1.2;
     margin: 10px 0;
   }
-  .hamburger {
-    display: block; /* Show the hamburger icon on mobile */
+
+  .top p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 20px;
+  }
+
+  .top button {
+    padding: 10px 20px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 20px;
+  }
+  .top {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .top h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .top button {
+    margin: 20px;
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .top p,
+  .text p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .text {
+    padding: 20px;
   }
 }
-
-.top p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 10px 20px;
-}
-
-.top button {
-  padding: 10px 20px;
-  font-size: 12px;
-  margin-top: 20px;
-}
-
-.text p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 10px 20px;
-}
-.top {
+/* section 2*/
+#section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
   height: 100vh;
-  padding: 20px;
 }
 
-.top h1 {
-  font-size: 24px;
+.we-do {
+  text-align: center;
+  margin-bottom: 150px;
+  margin-top: 80px;
+}
+.we-do h1 {
+  margin-bottom: 30px;
+  font-size: 1.8em;
+  color: rgb(43, 42, 42);
+}
+.we-do p {
+  color: #373535;
+}
+.container {
+  display: flex;
+  display: flex;
+  gap: 70px;
+}
+.box {
+  width: 180px;
   text-align: center;
 }
-
-.top button {
-  margin: 20px;
-  width: auto;
-  padding: 10px 20px;
-}
-
-.top p,
-.text p {
+.box p {
   font-size: 14px;
-  padding: 10px;
+  text-align: justify;
+  color: #424141;
+}
+.box h1 {
+  margin-bottom: 20px;
+  font-size: 1em;
+  margin-top: 20px;
+  color: #2e2e2e;
+}
+.fa-image,
+.fa-music,
+.fa-ear-deaf {
+  font-size: 55px;
+  color: #ff6565;
 }
 
-.text {
-  padding: 20px;
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+  #section2 {
+    padding: 20px;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .we-do {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .we-do h1 {
+    font-size: 1.5em;
+  }
+
+  .we-do p {
+    font-size: 14px;
+  }
+
+  .box p {
+    font-size: 12px;
+  }
+
+  .fa-image,
+  .fa-music,
+  .fa-ear-deaf {
+    font-size: 40px;
+  }
 }
